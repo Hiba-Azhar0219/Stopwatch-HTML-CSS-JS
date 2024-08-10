@@ -1,0 +1,152 @@
+body {
+  font-family: "Roboto Slab", serif;
+  background-image: url("assets/st5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+  z-index: -1; /* Ensures the overlay stays behind the content */
+}
+
+.stopwatch-container {
+  text-align: center;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgba(254, 197, 42, 0.963);
+  width: 400px;
+  position: relative;
+  z-index: 1;
+}
+
+.heading {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  background-color: #000;
+  padding: 10px 0;
+  z-index: 2;
+}
+
+.heading h1 {
+  color: #ffffff;
+  font-size: 5rem;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  padding-top: 10px;
+  margin: 0;
+  text-shadow: 4px 4px 20px #ffcc00;
+}
+
+.timer {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button {
+  flex: 1;
+  margin: 0 5px;
+  background: #ffcc00;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  outline: none;
+  box-shadow: 0px 4px 6px rgba(255, 240, 240, 0.338);
+}
+
+.buttons button:hover {
+  background: #f4d970;
+}
+
+.saved-times {
+  margin-top: 20px;
+}
+
+.card {
+  background: #333;
+  font-size: 20px;
+  color: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(174, 174, 174, 0.1);
+}
+
+.dialog-box {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.dialog-content {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.dialog-content h2 {
+  margin-bottom: 20px;
+  color: #ffcc00;
+}
+
+.dialog-content input {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.dialog-buttons button {
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background: #ffcc00;
+  color: black;
+  font-weight: bold;
+}
+
+.dialog-buttons button:hover {
+  background: #ffd633;
+}
