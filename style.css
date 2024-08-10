@@ -1,6 +1,6 @@
 body {
-  font-family: "Roboto Slab", serif;
-  background-image: url("assets/st5.jpg");
+  font-family: 'Roboto Slab', serif;
+  background-image: url('assets/st5.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -16,7 +16,7 @@ body {
 }
 
 body::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -50,7 +50,7 @@ body::before {
 .heading h1 {
   color: #ffffff;
   font-size: 5rem;
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto Slab', serif;
   text-align: center;
   padding-top: 10px;
   margin: 0;
