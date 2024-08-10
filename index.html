@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -47,3 +48,54 @@
     <script src="script.js"></script>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChronoMaster Stopwatch</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <div class="heading">
+      <h1>ChronoMaster</h1>
+    </div>
+    <div class="stopwatch-container">
+      <div class="timer">
+        <span id="hours">00</span>:<span id="minutes">00</span>:<span
+          id="seconds"
+          >00</span
+        >.<span id="milliseconds">000</span>
+      </div>
+      <div class="buttons">
+        <button id="startBtn">Start</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="stopBtn">Stop</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+      <div id="savedTimes" class="saved-times"></div>
+    </div>
+
+    <!-- Dialog Box -->
+    <div id="dialogBox" class="dialog-box">
+      <div class="dialog-content">
+        <h2>Save Recorded Time</h2>
+        <input
+          type="text"
+          id="titleInput"
+          placeholder="Enter a title for this time"
+        />
+        <div class="dialog-buttons">
+          <button id="saveBtn">Save</button>
+          <button id="cancelBtn">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+>>>>>>> 57667119ebc084cd7444e73d6f935e4d3eaeaf88
